@@ -1,0 +1,134 @@
+/* Importing font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Jockey+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: rgba(0, 85, 255, 0.392); */
+    background: linear-gradient(180deg, rgba(55, 81, 132, 1) 0%, rgba(107, 104, 104, 0) 100%);
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+
+.heading {
+    font-size: 32px;
+    font-weight: 600;
+    background-color: #DDEEC0;
+    border-radius: 35px;
+    width: 300px;
+    height: 70px;
+    margin: 2% auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    background-color: rgba(255, 255, 255, 0.47);
+    border-radius: 30px;
+    padding: 25px;
+    margin: 15px;
+}
+
+h3 {
+    padding: 15px;
+}
+
+#close-btn {
+    position: absolute;
+    top: 3%;
+    right: 2%;
+    cursor: pointer;
+}
+
+.section {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    text-align: center;
+    background-color: #FFF6F6;
+    width: 400px;
+    height: 250px;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+p {
+    padding: 0 8%;
+}
+
+ul {
+    padding: 3% 8%;
+}
+
+
+
+@media (max-width: 430px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .section {
+        font-size: 16px;
+        width: 300px;
+        height: 230px;
+    }
+    .section:first-child{
+        height: 300px;
+    }
+    p {
+        padding: 0 4%;
+    }
+
+    .heading {
+        text-align: center;
+        font-size: 25px;
+        width: 200px;
+        height: 50px;
+        margin: 2% auto;
+        padding: auto;
+    }
+
+    .grid-container {
+        padding: auto;
+        padding: 10px;
+        margin: auto;
+    }
+
+    #close-btn {
+        position: absolute;
+        top: 0.5%;
+        right: 0%;
+    }
+}
+
+@media (max-width: 768px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 1448px) and (min-width:768px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explosive Escapade - Welcome</title> <!-- Set a meaningful title -->
+    <link rel="stylesheet" href="./intro.css">
+    <link rel="shortcut icon" href="./assets/minesweeper-logo.png" type="image/x-icon">
+
+</head>
+<body>
+    <!-- Welcome Text Section -->
+    <div class="welcome-text">
+        <p> Welcome to Explosive Escapade, a thrilling grid-based game! Your objective is to clear the grid by clicking on as many safe tiles as possible, all while avoiding hidden mines.</p>
+    </div>
+
+    <!-- Input Form Section -->
+    <div class="form-container">
+        <div class="form-text">
+            <p>Enter Your Name and Nickname:</p>
+        </div>
+        <div class="input-container">
+            <input type="text" placeholder="Name" class="form-input" id="name" required>
+            <input type="text" placeholder="Nickname" class="form-input" id="nickname" required>
+      
+
+        <!-- Game Mode Selection -->
+        <div id="mode-type">
+            <p class="form-text">Select the game mode:</p>
+            <div class="checkbox">
+                <div class="solochoice">
+                    <label for="solo-mode">Solo</label>
+                    <input type="radio" id="solo-mode" name="mode" value="solo-mode">
+                </div>
+                <div class="multichoice">
+                    <label for="multiplayer-mode">Multiplayer</label>
+                    <input type="radio" id="multiplayer-mode" name="mode" value="multiplayer-mode">
+                </div>
+            </div>
+        </div>
+        </div>
+
+    <!-- Start Game Button -->
+    <div class="start-btn">
+    <p style="cursor: pointer;">Start Game</p>
+    </div>
+    </div>
+</body>
+   <!-- JavaScript -->
+<script src="./intro.js"></script>
+</html>

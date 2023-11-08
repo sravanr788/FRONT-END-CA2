@@ -1,0 +1,106 @@
+/* Importing font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Inter&display=swap');
+
+/* Resetting default margin, padding, and box-sizing for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling the body with background image and adjusting it to body  */
+body {
+    background-image: url(./assets/gameoverbg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Styling the main container */
+.container {
+    padding: 20% auto;
+    background: linear-gradient(180deg, rgba(187, 29, 29, 1) 0%, rgba(29, 16, 16, 0) 100%);
+    width: 38%;
+    height: 42%;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: 'Comic Neue', cursive;
+}
+
+/* Styling the  heading tags */
+h1 {
+    padding: 2% auto;
+}
+
+h4 {
+    padding: 6% 19%;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.714);
+}
+
+/* Styling the Play Again button */
+#play-again-btn {
+    background-color: rgba(255, 255, 255, 0.336);
+    border-radius: 35px;
+    width: 32%;
+    padding: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Styling anchor tag to remove default text decoration */
+a {
+    color: white;
+    text-decoration: none;
+}
+/* Adding media queries to the respective screen sizes */
+
+/* for screens with a max-width of 430px */
+@media (max-width: 430px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container {
+        padding: auto;
+        width: 70%;
+    }
+    #play-again-btn {
+        width: 70%;
+        font-size: 1rem;
+    }
+    h4 {
+        font-size: 12px;
+    }
+}
+
+/*for screens with a max-width of 725px and a min-width of 430px */
+@media (max-width: 725px) and (min-width: 430px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container {
+        padding: auto;
+        width: 70%;
+    }
+    #play-again-btn {
+        width: 70%;
+        font-size: 1rem;
+    }
+    h4 {
+        font-size: 12px;
+    }
+}

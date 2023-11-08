@@ -1,0 +1,90 @@
+/* Defining a custom font-family from an asset link */
+@font-face {
+    font-family: dragon;
+    src: url("./assets/DragonHunter-9Ynxj.otf");
+}
+
+/* Reset default margin, padding, and box-sizing for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling the body with a background image and custom font */
+body {
+    background-image: url(./assets/introbackgroundimg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;
+    font-family: dragon;
+}
+
+/* Styling the play button */
+#play-btn {
+    border-radius: 20px;
+    background-color: #0effff8b;
+    background: linear-gradient(180deg, rgba(130, 255, 6, 1) 0%, rgba(153, 153, 153, 0) 100%);
+    width: 220px;
+    height: 60px;
+    padding: 30px;
+    position: absolute;
+    top: 80%;
+    left: 43%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* Styling the logo */
+#logo {
+    width: 120px;
+}
+
+/* Styling the logo container */
+#logo-container {
+    display: flex;
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 20%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Styling the logo text and links */
+.logo-text {
+    color: black;
+    font-size: 35px;
+}
+
+a {
+    font-size: 35px;
+    text-decoration: none;
+    color: rgba(14, 255, 255, 0.886);
+}
+
+/* Adding media queries to the respective screen sizes  */
+@media (max-width: 420px) {
+    #play-btn {
+        width: 120px;
+        height: 60px;
+        padding: 30px;
+        position: absolute;
+        top: 80%;
+        left: 35%;
+    }
+    #logo {
+        width: 90px;
+    }
+    #logo-container {
+        width: 200px;
+        margin: 0 auto;
+        padding-top: 55%;
+    }
+    p, .logo-text {
+        font-size: 25px;
+        color: white;
+}
+}

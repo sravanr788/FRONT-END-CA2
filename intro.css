@@ -1,0 +1,138 @@
+/* Importing font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Jockey+One&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+/* Styling the body with background image and adjusting it to body  */
+body{
+    background-image: url(./assets/bg2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+}
+/* Styling the welcome text  */
+.welcome-text{
+    color: white;
+    font-size: 32px;
+    padding: 3% 9%;
+    font-size: 34px;
+}
+/* Styling the form container and its elements  */
+.form-container{
+    font-family: 'Jockey One', sans-serif;
+    padding: 4% 30%;
+}
+.form-text{
+    color: white;
+    font-size: 36px;
+}
+.form-input{
+    background-color: #F6E2E2;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    font-size: 32px;
+    font-family: 'Jockey One', sans-serif;
+    padding: 15px 0px 15px 35px;
+}
+
+/* Styling the input container and its elements  */
+.input-container{
+    color: #c07777;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 320px;
+}
+.checkbox {
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+}
+.solochoice , .multichoice {
+    width: 50%;
+    color: white;
+}
+
+/* Styling the start button  */
+.start-btn{
+    font-family: 'Inter', sans-serif;
+    padding: 5px;
+    border: 8px solid #C20B0B;
+    border-radius: 32px;
+    font-size: 52px;
+    font-weight: bold;
+    opacity: 0.8;
+    background-color: rgba(28, 27, 27, 0.549);
+    text-align: center;
+    cursor: pointer;
+}
+.start-btn:hover{
+     border: 8px solid #0bc22a;
+     color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Adding media queries to the respective screen sizes  */
+@media (max-width: 430px) {
+    body {
+        height: 100vh;
+    }
+    .form-container{
+        padding: 5%;
+
+    }
+    .welcome-text{
+        padding: 11% 10% ;
+        font-size: 1rem;
+    }
+    .form-text{
+        font-size: 22px;
+    }
+    .form-input{
+        height: 40px;
+        font-size: 18px;
+        font-family: 'Jockey One', sans-serif;
+        padding: 15px 0px 15px 35px;
+    }
+    .input-container{
+        font-size: 12px;
+    }
+    .start-btn{
+        padding: 0;
+        font-size: 20px;
+        border: 4px solid #d71010;
+        padding: 14px;
+        color: white;
+        margin: 5%;
+        background-color:rgb(19, 20, 22);
+        cursor:pointer;
+    }
+
+}
+@media (max-width: 725px) and (min-width:430px) {
+   
+    .container{
+        padding : auto;
+        width: 70%;
+    }
+    #play-again-btn{
+        width: 70%;
+        font-size: 1rem;
+    }
+    p{
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 430px) and (max-width: 1444px) {
+    body {
+        height: 100vh;
+    }
+  }

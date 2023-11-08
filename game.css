@@ -1,0 +1,198 @@
+/* Resetting the default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Styling the body with bg color and adjusting the size  */
+body{
+    background-size: cover ;
+    height: 100vh;
+    background: linear-gradient(280deg, rgba(19, 20, 14, 1) 0%, rgba(122, 147, 126, 0.81)100%);
+}
+/* Styling the panel  */
+.panel{
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 20% 2% 5%;
+}
+/* Styling the score  */
+.score{
+    padding: 15px;
+    border-radius: 25px;
+    width: 15%;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.419);
+    color: white;
+    text-align: center;
+    font-size: 32px;   
+}
+/* Styling the bomb image in box  */
+.bomb{
+    display: flex;
+    border-radius: 25px;
+    width: 13%;
+    height: 70px;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: space-around;
+}
+/* Styling for the bombs which appear after clicking  */
+#bombs{
+    padding: 25px;
+    font-size: 36px;
+}
+/* Styling the grid container  */
+.game-arena{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 10px;
+    background-color: #b94730;
+    width: 40%;
+    height: 80vh;
+    border-radius: 18px;
+    padding: 15px;
+    margin: 0 auto;
+}
+/* Styling the timer  */
+.timer {
+    border: 2px solid black;
+    border-left: none;
+    border-right: none;
+    width: 100px;
+    font-size: 34px;
+    text-align: center;
+    padding: 20px;
+}
+/* Styling addons  */
+.addons{
+    position: absolute;
+    right: 2%;
+    top: 5%;
+}
+/* sTYLING THE GRID BOX */
+.tile {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background-color: #B69FBB;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.tile .bomb-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+/* Styling the tile when appropriate class is added to it  */
+.tile.revealed {
+    transform: rotateY(180deg);
+}
+.tile.clicked {
+    background-color: rgb(35, 230, 84);
+}
+.tile.danger {
+    background-color: #eb3208;
+}
+.hint:active {
+    background-color: aqua;
+}
+.instructions:hover , .hint:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+/* Adding media queries to the respective screen sizes */
+@media (max-width: 430px) {
+    .game-arena{
+    grid-template-columns: repeat(6,1fr);
+    gap: 10px;
+    background-color: #b94730;
+    width: 90%;
+    height: 75vh;
+    border-radius: 18px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.tile {
+    width: 40px;
+    height: 40px;
+    width: 100%;
+    height: 60%;
+    background-color: #B69FBB;
+    border-radius: 10px;
+}
+.tile .bomb-image {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    display: none;
+}
+.addons{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 98% 20% 0% 30%;
+    padding-top: 20%;
+}
+.panel{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+#bombimg {
+    width: 30px;
+    height: 25px;
+}
+.score{
+    padding: 5px;
+    border-radius: 15px;
+    width: 28%;
+    height: 40px;
+    font-size: 22px;
+}
+.timer{
+    font-size: 26px;
+    width: 60px;
+    padding: 5px;
+}
+.bomb{
+    border-radius: 15px;
+    width: 23%;
+    height: 60px;
+}
+.image {
+    width: 60px;
+    height: 60px;
+}
+#bombs{
+    padding: 5px;
+    font-size: 26px;
+}
+}
+
+@media  (max-width: 380px) {
+    .game-arena{
+        width: 90%;
+    }
+    .addons{
+        margin: 130% 20% 25% 20%;
+        padding-top: 27%;
+    }
+}
+
+@media (min-width: 430px) and (max-width: 1024px) {
+    .game-arena {
+        width: 60%;
+    }
+  }
